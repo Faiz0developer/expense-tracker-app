@@ -16,7 +16,7 @@ const Expenses = (props) => {
   });
 
   return (
-    <Card className="p-4 bg-[rgb(31,31,31)] my-8 mx-auto w-[50rem] max-w-full">
+    <Card className="p-4 bg-white my-8 mx-auto w-[50rem] max-w-[95%]">
       <ExpensesFilter
         selected={filteredYear}
         onChangeFilter={filterChangeHandler}
