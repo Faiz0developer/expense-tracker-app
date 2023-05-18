@@ -3,7 +3,7 @@ import ExpenseItem from "./ExpenseItem";
 
 const ExpensesList = (props) => {
   if (props.items.length === 0) {
-    return <h2 className="text-white text-center">Found no expenses.</h2>;
+    return <h2 className="text-black text-center">Found no expenses.</h2>;
   }
 
   return (

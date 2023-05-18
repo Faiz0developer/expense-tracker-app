@@ -8,7 +8,7 @@ const ExpensesFilter = (props) => {
   return (
     <div className="text-white py-0 px-4">
       <div className="flex w-full items-center justify-between my-4 mx-0">
-        <label className="font-bold mb-2">Filter by year</label>
+        <label className="font-bold mb-2 text-black">Filter by year</label>
         <select
           className="font-inherit text-black bg-slate-400 py-2 px-12 font-bold rounded-md"
           value={props.selected}
