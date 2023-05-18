@@ -23,7 +23,7 @@ const NewExpense = (props) => {
   };
 
   return (
-    <div className="bg-[#a892ee] p-4 my-8 mx-auto w-[50rem] max-w-[95%] rounded-xl text-center shadow-xl">
+    <div className="bg-[#a892ee] p-4 my-8 mx-auto w-[50rem] max-w-full rounded-xl text-center shadow-xl">
       {!isEditing && (
         <button
           className="cursor-pointer py-4 px-8 border border-solid border-[#40005d] bg-[#40005d] text-white rounded-xl mr-4

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import NewExpense from "./components/New-expenses/NewExpense";
 import Expenses from "./components/Expenses/Expenses";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const DUMMY_EXPENSES = [
   {
@@ -36,11 +37,14 @@ const App = () => {
   };
 
   return (
-    <div>
+    <>
       <Header />
-      <NewExpense onAddExpense={addExpenseHandler} />
-      <Expenses items={expenses} />
-    </div>
+      <main>
+        <NewExpense onAddExpense={addExpenseHandler} />
+        <Expenses items={expenses} />
+      </main>
+      <Footer />
+    </>
   );
 };
 

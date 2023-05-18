@@ -16,16 +16,14 @@ const Expenses = (props) => {
   });
 
   return (
-    <div>
-      <Card className="p-4 bg-[rgb(31,31,31)] my-8 mx-auto w-[50rem]">
-        <ExpensesFilter
-          selected={filteredYear}
-          onChangeFilter={filterChangeHandler}
-        />
-        <ExpensesChart expenses={filteredExpenses} />
-        <ExpensesList items={filteredExpenses} />
-      </Card>
-    </div>
+    <Card className="p-4 bg-[rgb(31,31,31)] my-8 mx-auto w-[50rem] max-w-full">
+      <ExpensesFilter
+        selected={filteredYear}
+        onChangeFilter={filterChangeHandler}
+      />
+      <ExpensesChart expenses={filteredExpenses} />
+      <ExpensesList items={filteredExpenses} />
+    </Card>
   );
 };
 

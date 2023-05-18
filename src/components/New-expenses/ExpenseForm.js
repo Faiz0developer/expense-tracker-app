@@ -1,44 +1,20 @@
 import React, { useState } from "react";
 
 const ExpenseForm = (props) => {
-  // const date = new Date();
-  // console.log(date);
-  // const month = date.getMonth();
-  // console.log(month);
   const [enteredTitle, setEnteredTitle] = useState("");
   const [enteredAmount, setEnteredAmount] = useState("");
   const [enteredDate, setEnteredDate] = useState("");
-  // const [userInput, setUserInput] = useState({
-  //   enteredTitle: '',
-  //   enteredAmount: '',
-  //   enteredDate: '',
-  // });
 
   const titleChangeHandler = (event) => {
     setEnteredTitle(event.target.value);
-    // setUserInput({
-    //   ...userInput,
-    //   enteredTitle: event.target.value,
-    // });
-    // setUserInput((prevState) => {
-    //   return { ...prevState, enteredTitle: event.target.value };
-    // });
   };
 
   const amountChangeHandler = (event) => {
     setEnteredAmount(event.target.value);
-    // setUserInput({
-    //   ...userInput,
-    //   enteredAmount: event.target.value,
-    // });
   };
 
   const dateChangeHandler = (event) => {
     setEnteredDate(event.target.value);
-    // setUserInput({
-    //   ...userInput,
-    //   enteredDate: event.target.value,
-    // });
   };
 
   const submitHandler = (event) => {
@@ -65,7 +41,7 @@ const ExpenseForm = (props) => {
             type="text"
             value={enteredTitle}
             onChange={titleChangeHandler}
-            className="p-2 rounded-md border border-solid border-[#ccc] w-[20rem] max-w-full"
+            className="p-2 rounded-md border border-solid border-[#ccc] sm:w-[20rem] max-w-full"
           />
         </div>
         <div>
@@ -76,7 +52,7 @@ const ExpenseForm = (props) => {
             step="0.01"
             value={enteredAmount}
             onChange={amountChangeHandler}
-            className="p-2 rounded-md border border-solid border-[#ccc] w-[20rem] max-w-full"
+            className="p-2 rounded-md border border-solid border-[#ccc] sm:w-[20rem] max-w-full"
           />
         </div>
         <div>
@@ -87,7 +63,7 @@ const ExpenseForm = (props) => {
             // max="2023-12-31"
             value={enteredDate}
             onChange={dateChangeHandler}
-            className="p-2 rounded-md border border-solid border-[#ccc] w-[20rem] max-w-full"
+            className="p-2 rounded-md border border-solid border-[#ccc] sm:w-[20rem] max-w-full"
           />
         </div>
       </div>

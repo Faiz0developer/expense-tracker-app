@@ -14,5 +14,11 @@ html {
 
 body {
   margin: 0;
-  background-color: #3f3f3f;
+  background-image: linear-gradient(to top right, #bdc3c7, #2c3e50);
+}
+.linear {
+  background-image: linear-gradient(to top right, #141e30, #243b55);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 600;
 }
